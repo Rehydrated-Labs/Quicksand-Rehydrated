@@ -205,6 +205,7 @@ public class QuicksandRegistry {
     public static final RegistryObject<Block> TIDAL_MUD = registerBlock("tidal_mud", () -> new QuicksandBase( muddyBlockBehavior.sound(SoundType.MUD), tidalMudBehaviour));
 
     public static final RegistryObject<Block> MIRE = registerBlock("mire", () -> new DeepMudBlock( muddyBlockBehavior.sound(SoundType.MUD), MudBehavior, 1.0d));
+    public static final RegistryObject<Block> MARSH = registerBlock("marsh", () -> new DeepMudBlock( muddyBlockBehavior.sound(SoundType.MUD), MudBehavior, 1.0d));
 
     public static final RegistryObject<Block> SOFT_QUICKSAND = registerBlock("soft_quicksand", () -> new FlowingQuicksandBase(baseFlowingBlockBehavior, new QuicksandBehavior()
             .setBuoyancyPoint(BodyDepthThreshold.ABDOMEN.depth) // Buoyancy value for the knees (derived from SHOULDERS)
@@ -228,6 +229,23 @@ public class QuicksandRegistry {
     public static final RegistryObject<Block> RED_QUICKRUG = registerBlock("red_quickrug", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_RED), quickrugSinkable));
     public static final RegistryObject<Block> BLACK_QUICKRUG = registerBlock("black_quickrug", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_BLACK), quickrugSinkable));
 
+    public static final RegistryObject<Block> WHITE_WETCRETE = registerBlock("white_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.SNOW), quickrugSinkable));
+    public static final RegistryObject<Block> ORANGE_WETCRETE = registerBlock("orange_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_ORANGE), quickrugSinkable));
+    public static final RegistryObject<Block> MAGENTA_WETCRETE = registerBlock("magenta_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_MAGENTA), quickrugSinkable));
+    public static final RegistryObject<Block> LIGHT_BLUE_WETCRETE = registerBlock("light_blue_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_LIGHT_BLUE), quickrugSinkable));
+    public static final RegistryObject<Block> YELLOW_WETCRETE = registerBlock("yellow_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_YELLOW ), quickrugSinkable));
+    public static final RegistryObject<Block> LIME_WETCRETE = registerBlock("lime_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_LIGHT_GREEN), quickrugSinkable));
+    public static final RegistryObject<Block> PINK_WETCRETE = registerBlock("pink_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_PINK), quickrugSinkable));
+    public static final RegistryObject<Block> GRAY_WETCRETE = registerBlock("gray_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_GRAY), quickrugSinkable));
+    public static final RegistryObject<Block> LIGHT_GRAY_WETCRETE = registerBlock("light_gray_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_LIGHT_GRAY), quickrugSinkable));
+    public static final RegistryObject<Block> CYAN_WETCRETE = registerBlock("cyan_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_CYAN), quickrugSinkable));
+    public static final RegistryObject<Block> PURPLE_WETCRETE = registerBlock("purple_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_PURPLE), quickrugSinkable));
+    public static final RegistryObject<Block> BLUE_WETCRETE = registerBlock("blue_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_BLUE), quickrugSinkable));
+    public static final RegistryObject<Block> BROWN_WETCRETE = registerBlock("brown_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_BROWN), quickrugSinkable));
+    public static final RegistryObject<Block> GREEN_WETCRETE = registerBlock("green_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_GREEN), quickrugSinkable));
+    public static final RegistryObject<Block> RED_WETCRETE = registerBlock("red_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_RED), quickrugSinkable));
+    public static final RegistryObject<Block> BLACK_WETCRETE = registerBlock("black_wetcrete", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_BLACK), quickrugSinkable));
+
 
 
     public static Collection<ItemStack> setupCreativeGroups() {
@@ -244,6 +262,7 @@ public class QuicksandRegistry {
         addItem(BOTTOMLESS_MUD);
         addItem(TIDAL_MUD);
         addItem(MIRE);
+        addItem(MARSH);
 
         addItem(WHITE_QUICKRUG);
         addItem(ORANGE_QUICKRUG);
@@ -261,6 +280,23 @@ public class QuicksandRegistry {
         addItem(GREEN_QUICKRUG);
         addItem(RED_QUICKRUG);
         addItem(BLACK_QUICKRUG);
+
+        addItem(WHITE_WETCRETE);
+        addItem(ORANGE_WETCRETE);
+        addItem(MAGENTA_WETCRETE);
+        addItem(LIGHT_BLUE_WETCRETE);
+        addItem(YELLOW_WETCRETE);
+        addItem(LIME_WETCRETE);
+        addItem(PINK_WETCRETE);
+        addItem(GRAY_WETCRETE);
+        addItem(LIGHT_GRAY_WETCRETE);
+        addItem(CYAN_WETCRETE);
+        addItem(PURPLE_WETCRETE);
+        addItem(BLUE_WETCRETE);
+        addItem(BROWN_WETCRETE);
+        addItem(GREEN_WETCRETE);
+        addItem(RED_WETCRETE);
+        addItem(BLACK_WETCRETE);
         return CREATIVELIST;
     }
 
