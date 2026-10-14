@@ -212,6 +212,13 @@ public class QuicksandRegistry {
             .setResurfingForce(0.04) // Higher resurfing force for soft quicksand
     ));
 
+    public static final RegistryObject<Block> JUNGLE_QUICKSAND = registerBlock("jungle_quicksand", () -> new DeepMudBlock( muddyBlockBehavior.sound(SoundType.MUD), MudBehavior, 1.0d));
+
+    public static final RegistryObject<Block> TAR = registerBlock("tar", () -> new DeepMudBlock( slimeBlockBehavior.sound(SoundType.MUD), MudBehavior, 1.0d));
+    public static final RegistryObject<Block> MUCUS = registerBlock("mucus", () -> new DeepMudBlock( slimeBlockBehavior.sound(SoundType.MUD), MudBehavior, 1.0d));
+
+    public static final RegistryObject<Block> BROWN_CLAY = registerBlock("brown_clay", () -> new DeepMudBlock( muddyBlockBehavior.sound(SoundType.MUD), MudBehavior, 1.0d));
+
     public static final RegistryObject<Block> WHITE_QUICKRUG = registerBlock("white_quickrug", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.SNOW), quickrugSinkable));
     public static final RegistryObject<Block> ORANGE_QUICKRUG = registerBlock("orange_quickrug", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_ORANGE), quickrugSinkable));
     public static final RegistryObject<Block> MAGENTA_QUICKRUG = registerBlock("magenta_quickrug", () -> new Quickrug( woolBlockBehavior.mapColor(MapColor.COLOR_MAGENTA), quickrugSinkable));
@@ -263,6 +270,10 @@ public class QuicksandRegistry {
         addItem(TIDAL_MUD);
         addItem(MIRE);
         addItem(MARSH);
+        addItem(JUNGLE_QUICKSAND);
+        addItem(TAR);
+        addItem(MUCUS);
+        addItem(BROWN_CLAY);
 
         addItem(WHITE_QUICKRUG);
         addItem(ORANGE_QUICKRUG);

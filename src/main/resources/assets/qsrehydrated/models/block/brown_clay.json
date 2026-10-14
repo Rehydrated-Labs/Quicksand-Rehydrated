@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "qsrehydrated:block/brown_clay_top",
+    "side": "qsrehydrated:block/brown_clay"
+  }
+}

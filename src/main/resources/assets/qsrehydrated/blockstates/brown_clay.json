@@ -1,0 +1,21 @@
+{
+"variants": {
+"": [
+{
+"model": "qsrehydrated:block/brown_clay"
+},
+{
+"model": "qsrehydrated:block/brown_clay",
+"y": 90
+},
+{
+"model": "qsrehydrated:block/brown_clay",
+"y": 180
+},
+{
+"model": "qsrehydrated:block/brown_clay",
+"y": 270
+}
+]
+}
+}
